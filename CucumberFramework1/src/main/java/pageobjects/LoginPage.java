@@ -7,6 +7,9 @@ import utilities.Utilities;
 
 public class LoginPage extends Utilities {
 
+	
+	
+
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -24,17 +27,17 @@ public class LoginPage extends Utilities {
 	// WebElement ele = driver.findElement(UN);
 
 	public void enterUN(String UN) throws InterruptedException {
-		flashing(UserName);
+		//flashing(UserName);
 		sendKeys(UserName,UN);	
 	}
 
 	public void enterPW(String PW) throws InterruptedException {
-		flashing(PassWord);
+		//flashing(PassWord);
 		sendKeys(PassWord,PW);
 	}
 
 	public void clickLoginBtn() throws InterruptedException {
-		flashing(LoginButton);
+		//flashing(LoginButton);
 		clickOnElement(LoginButton);
 	}
 }
