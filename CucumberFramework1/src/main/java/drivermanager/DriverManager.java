@@ -59,8 +59,8 @@ public class DriverManager {
 	}
 	
 	
-	public static DriverManager getDriverInstance() {
-		return new DriverManager();
+	public static WebDriver getDriver() {
+		return driver;
 	}
 	
 }

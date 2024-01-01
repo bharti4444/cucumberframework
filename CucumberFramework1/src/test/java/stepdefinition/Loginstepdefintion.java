@@ -11,13 +11,13 @@ public class Loginstepdefintion extends ScreenShot{
 	
 	@Given("User enters the URL")
 	public void user_enters_the_url() {
-		System.out.println("Login page");	
+		System.out.println("Login page in Background");	
 	}
 
 	@Then("User lands on login page of saucelabs")
 	public void user_lands_on_login_page_of_saucelabs() throws IOException {
 		System.out.println("Login page");
-		takeScreenshotOnSuccess("Landign Page - Login page");
+		takeScreenshotOnSuccess("Landign Page - Login Page in Background");
 	}
 
 	@When("User Enters username {string}")
@@ -59,9 +59,9 @@ public class Loginstepdefintion extends ScreenShot{
 	}
 
 	@Then("Validate correct error message should come for PW")
-	public void validate_correct_error_message_should_come_for_pw() {
+	public void validate_correct_error_message_should_come_for_pw() throws Exception {
 	    // Write code here that turns the phrase above into concrete actions
-	  
+		//throw new Exception("Rerun Functionality");
 	}
 
 	@Then("Validate correct error message should come")
@@ -77,9 +77,9 @@ public class Loginstepdefintion extends ScreenShot{
 	}
 
 	@Then("error message should disappear")
-	public void error_message_should_disappear() {
+	public void error_message_should_disappear() throws Exception {
 	    // Write code here that turns the phrase above into concrete actions
-	   
+		throw new Exception("Rerun Functionality");
 	}
 
 }

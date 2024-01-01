@@ -9,7 +9,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = { "src\\test\\resources\\Ecommerce Product Ordering\\" }, 
 		glue = { "stepdefinition","hooks"}, 
-		plugin = { "pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+		plugin = { "pretty",
+				"rerun:target/failedcases.txt",
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 				}
 				
 		)
